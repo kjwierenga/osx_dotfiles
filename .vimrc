@@ -70,3 +70,6 @@ set backup                     " Enable creation of backup file.
 set backupdir=~/.vim/backups " Where backups will go.
 set directory=~/.vim/tmp     " Where temporary files will go.
 
+" load credentials (not in scm)
+source ~/.vim_credentials
+
