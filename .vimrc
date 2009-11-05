@@ -9,13 +9,13 @@ set nocompatible  " We don't want vi compatibility.
 
 " Add recently accessed projects menu (project plugin)
 set viminfo^=!
- 
+
 " Minibuffer Explorer Settings
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
- 
+
 " alt+n or alt+p to navigate between entries in QuickFix
 map <silent> <m-p> :cp <cr>
 map <silent> <m-n> :cn <cr>
@@ -35,7 +35,7 @@ set nu  " Line numbers on
 set nowrap  " Line wrapping off
 set timeoutlen=250  " Time to wait after ESC (default causes an annoying delay)
 " colorscheme vividchalk  " Uncomment this to set a default theme
- 
+
 " Formatting (some of these are for coding in C and C++)
 set ts=2  " Tabs are 2 spaces
 set bs=2  " Backspace over everything in insert mode
@@ -48,7 +48,7 @@ set cindent
 set autoindent
 set smarttab
 set expandtab
- 
+
 " Visual
 set showmatch  " Show matching brackets.
 set mat=5  " Bracket blinking.
@@ -75,4 +75,7 @@ source ~/.vim_credentials
 
 " easily cd to directory of current buffer
 map ,cd :cd %:p:h<CR>
+
+" Remove trailing whitespace before saving a file
+autocmd BufWritePre * :%s/\s\+$//e
 
