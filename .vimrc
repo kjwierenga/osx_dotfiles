@@ -4,7 +4,7 @@
 " Settings from http://biodegradablegeek.com/2007/12/using-vim-as-a-complete-ruby-on-rails-ide/
 " Using Vim as a Complete Ruby on Rails IDE
 
-filetype on  " Automatically detect file types.
+filetype indent on  " Automatically detect file types.
 set nocompatible  " We don't want vi compatibility.
 
 " Add recently accessed projects menu (project plugin)
