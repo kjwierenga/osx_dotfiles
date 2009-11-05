@@ -73,3 +73,6 @@ set directory=~/.vim/tmp     " Where temporary files will go.
 " load credentials (not in scm)
 source ~/.vim_credentials
 
+" easily cd to directory of current buffer
+map ,cd :cd %:p:h<CR>
+
