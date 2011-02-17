@@ -1,20 +1,20 @@
 # Adapted from http://iain.nl/2009/10/configuring-autotest/
 
 # Use file system hooks on OS X
-require 'autotest/fsevent'
+#require 'autotest/fsevent'
 
 # Don't run entire test suite when going from red to green
 # Use ^C to run run entire test suite
-class Autotest
-  def tainted
-    false
-  end
-end
+#class Autotest
+#  def tainted
+#    false
+#  end
+#end
 
 # Use Growl support
-require 'autotest/growl'
+#require 'autotest/growl'
 
 # Don't clear the terminal, when using Growl
-module Autotest::Growl
-  @@clear_terminal = false
-end
+#module Autotest::Growl
+#  @@clear_terminal = false
+#end
